@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Sarah Facci</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    @RenderSection("Styles",false)
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+
+        <div class="container">
+            <div class="navbar-header">
+
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+                @Html.ActionLink("SARAH FACCI", "Index", "Home", null, new { @class = "navbar-brand" })
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                   
+                    <li>@Html.ActionLink("Resume", "Index", "Resume")</li>
+                    <li>@Html.ActionLink("Projects", "Projects", "Home")</li>
+                    <li>@Html.ActionLink("About", "About", "Home")</li>
+                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                </ul>
+                @*@Html.Partial("_LoginPartial")*@
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="https://www.linkedin.com/in/sarahfacci">
+                        <img src="@Url.Content("~/Content/linkedin-logo.png")" alt="LinkedIn" /></a></li>
+                    @*<li><img src="@Url.Content("~/Content/linkedin-logo.png")" alt="LinkedIn" /></li>*@
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+        <div class="container body-content">
+            @RenderBody()
+            <hr />
+            <footer>
+                <p>&copy; @DateTime.Now.Year - This website was built by Sarah Facci with MVC5 and Bootstrap 3, with the help of @Html.ActionLink("these tools", "Tools", "Home").</p>
+            </footer>
+        </div>
+
+        @Scripts.Render("~/bundles/jquery")
+        @Scripts.Render("~/bundles/bootstrap")
+        @RenderSection("scripts", required: false)
+</body>
+</html>

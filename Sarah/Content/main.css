@@ -1,0 +1,205 @@
+﻿
+.jumbotron{
+    margin-top: -5px;
+    position:relative;
+    height:85%;
+    background-color: #d9d9d9;
+}
+
+/*Buttons*/
+.btn-main-page {
+    color: #ffffff;
+    background-color: #85a3e0;
+    border-color: #5c85d6;
+    border-radius: 1px;
+    font-size:larger;
+    font-weight:bold;
+}
+.btn-main-page > a,
+  a:visited {
+    color:#ffffff;
+    text-decoration:none;
+}
+
+/*XSmall up to 768*/
+#jumbo-heading {
+    font-family: 'LemonMilk', Impact, sans-serif;
+}
+
+ #jumbo-quote{
+    font-family:  'Arvin', Arial Narrow, sans-serif;
+    
+    }
+ #portrait{
+    max-height:250px;
+    max-width:250px;
+    }
+ #caption{
+     font-family:'Arvin';
+     font-size: 25px;
+ }
+
+/*Small = 768*/
+/*Medium = 992*/
+@media (min-width: 768px) {
+
+    #jumbo-portrait{
+        padding:20px;
+    }
+   
+    #jumbo-quote{
+        padding-top: 15px;
+        padding-left: 20px;
+        padding-right: 10px;
+    }
+     #caption{
+     font-size: 38px;
+ }
+}
+
+/*med and up*/
+@media (min-width: 992px) {
+     #portrait{
+        max-height:350px;
+        max-width:350px;
+    }
+
+    #jumbo-portrait{     
+        height:100%; 
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+    }
+    #jumbo-heading{   
+        float:right;
+        position:relative;
+        height:30%;
+    }
+    #jumbo-buttons{
+        height:25%;
+        position:relative;
+        display:inline-flex; 
+        flex-direction:row;
+        justify-content:space-around;
+    }
+    #jumbo-quote{
+        height:45%;
+        padding-top: 20px;
+        padding-left: 45px;
+        padding-right: 20px;
+    }
+    
+     #caption{
+     font-size: 40px;
+ }
+    /* Button sizing */
+    .btn-main-page{
+       width: 25%;
+       align-items: stretch;
+       display:flex;
+       flex-direction:column;
+       justify-content:center;
+    }
+
+    /* the inner span of the anchors, to expand the clickable area*/
+    .block-anchor{ 
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        height:100%;
+    }
+
+}
+
+
+
+/*.btn-main-page:hover,
+.btn-main-page:focus,
+.btn-main-page:active,
+.btn-main-page.active,
+.open .dropdown-toggle.btn-main-page {
+  color: #ffffff;
+  background-color: #85a3e0;
+  border-color: #5c85d6;
+}
+
+.btn-main-page:active,
+.btn-main-page.active,
+.open .dropdown-toggle.btn-main-page {
+  background-image: none;
+}
+
+.btn-main-page.disabled,
+.btn-main-page[disabled],
+fieldset[disabled] .btn-main-page,
+.btn-main-page.disabled:hover,
+.btn-main-page[disabled]:hover,
+fieldset[disabled] .btn-main-page:hover,
+.btn-main-page.disabled:focus,
+.btn-main-page[disabled]:focus,
+fieldset[disabled] .btn-main-page:focus,
+.btn-main-page.disabled:active,
+.btn-main-page[disabled]:active,
+fieldset[disabled] .btn-main-page:active,
+.btn-main-page.disabled.active,
+.btn-main-page[disabled].active,
+fieldset[disabled] .btn-main-page.active {
+  background-color: #c2d1f0;
+  border-color: #adc2eb;
+  color:#7094db;
+}*/
+
+
+
+/*Individual button coloring*/
+#resume-button {
+  color: #ffffff;
+  background-color: #E2C044;
+  border-color: #ddb422;
+}
+#resume-button:hover,
+#resume-button:focus,
+#resume-button:active,
+#resume-button.active{
+  color: #ffffff;
+  background-color: #e7cb65;
+  border-color:#E2C044;
+}
+
+
+#projects-button {
+  color: #ffffff;
+  background-color: #679298;
+  border-color: #537579;
+}
+#projects-button:hover,
+#projects-button:focus,
+#projects-button:active,
+#projects-button.active{
+  color: #ffffff;
+  background-color: #95b3b7;
+  border-color:#679298;
+}
+
+
+#about-button {
+  color: #ffffff;
+  background-color: #47566b;
+  border-color: #343f4e;
+}
+#about-button:hover,
+#about-button:focus,
+#about-button:active,
+#about-button.active{
+  color: #ffffff;
+  background-color: #8596ad;
+  border-color:#47566b;
+}
+
+
+/* links on navbar to collapse*/
+/* write blurb for front page*/
+/* put content in footer*/
+/*heading size small screen*/
+/* replace brand with page name*/
+/* collapsing navbar - deal with icons*/

@@ -1,0 +1,232 @@
+﻿/* Font specifications*/
+@font-face
+ {
+    font-family: 'CustomHandwriting'; 
+    src: url('../fonts/FISH&CHIPS-Regular.ttf') format('truetype'); 
+ }
+
+@font-face
+ {
+    font-family: 'CustomTypewriter'; 
+    src: url('../fonts/NixieOne.ttf') format('truetype'); 
+ }
+
+@font-face
+ {
+    font-family: 'Arvin'; 
+    src: url('../fonts/Arvin Regular.ttf') format('truetype'); 
+ }
+
+
+@font-face
+ {
+    font-family: 'Photographs'; 
+    src: url('../fonts/Photographs.ttf') format('truetype'); 
+ }
+
+@font-face
+ {
+    font-family: 'Gravity'; 
+    src: url('../fonts/Gravity-Bold.otf') format('opentype'); 
+ }
+
+@font-face
+ {
+    font-family: 'LemonMilk'; 
+    src: url('../fonts/LemonMilk.otf') format('opentype'); 
+ }
+
+@font-face
+ {
+    font-family: 'Pumpkin'; 
+    src: url('../fonts/DK Spiced Pumpkin.otf') format('opentype'); 
+ }
+ 
+@media (min-width: 768px) {
+    html, body {
+        margin: 0px;
+        height: 100%;
+    }
+}
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 0px;
+    height:100%;
+}
+
+
+/*Override navbar styles*/
+
+.navbar, .navbar-inverse, .navbar-fixed-top{
+    background-color:#393E41;
+}
+
+/* these groups copied from bootstrap*/
+.navbar-inverse .navbar-brand {
+  color: #D3D0CB;
+}
+.navbar-inverse .navbar-brand:hover,
+.navbar-inverse .navbar-brand:focus {
+  color: #9d9d9d;
+  background-color: transparent;
+}
+.navbar-inverse .navbar-text {
+  color: #D3D0CB;
+}
+.navbar-inverse .navbar-nav > li > a {
+  color: #D3D0CB;
+}
+.navbar-inverse .navbar-nav > li > a:hover,
+.navbar-inverse .navbar-nav > li > a:focus {
+  color: #9d9d9d;
+  background-color: transparent;
+}
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:hover,
+.navbar-inverse .navbar-nav > .active > a:focus {
+  color: #9d9d9d;
+  background-color: #080808;
+}
+.navbar-inverse .navbar-nav > .disabled > a,
+.navbar-inverse .navbar-nav > .disabled > a:hover,
+.navbar-inverse .navbar-nav > .disabled > a:focus {
+  color: #444;
+  background-color: transparent;
+}
+.navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
+    color: #D3D0CB;
+  }
+.navbar-inverse .navbar-link {
+  color: #D3D0CB;
+}
+.navbar-inverse .navbar-link:hover {
+  color: #9d9d9d;
+}
+.navbar-inverse .btn-link {
+  color: #D3D0CB;
+}
+.navbar-inverse .btn-link:hover,
+.navbar-inverse .btn-link:focus {
+  color: #9d9d9d;
+}
+
+
+/* back to my stuff*/
+
+.navbar-brand{
+    font-family:'Arvin';
+    color: #D3D0CB;
+}
+
+.navbar-right{
+    min-height:50px;
+    display:flex;
+    flex-direction: row;
+    align-items:center;
+    padding-right:35px;
+}
+.navbar-right > li {
+  padding-left:10px;  
+}
+
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+/* styles for validation helpers */
+.field-validation-error {
+    color: #b94a48;
+}
+
+.field-validation-valid {
+    display: none;
+}
+
+input.input-validation-error {
+    border: 1px solid #b94a48;
+}
+
+input[type="checkbox"].input-validation-error {
+    border: 0 none;
+}
+
+.validation-summary-errors {
+    color: #b94a48;
+}
+
+.validation-summary-valid {
+    display: none;
+}
+
+.img-responsive{width:100%;}
+
+
+
+/*
+ * Responsive text aligning
+ * http://ohryan.ca/2014/08/14/set-responsive-text-alignment-bootstrap-3/
+ */
+.text-xs-left { text-align: left; }
+.text-xs-right { text-align: right; }
+.text-xs-center { text-align: center; }
+.text-xs-justify { text-align: justify; }
+
+@media (min-width: @screen-sm-min) {
+  .text-sm-left { text-align: left; }
+  .text-sm-right { text-align: right; }
+  .text-sm-center { text-align: center; }
+  .text-sm-justify { text-align: justify; }
+}
+
+@media (min-width: @screen-md-min) {
+  .text-md-left { text-align: left; }
+  .text-md-right { text-align: right; }
+  .text-md-center { text-align: center; }
+  .text-md-justify { text-align: justify; }
+}
+
+@media (min-width: @screen-lg-min) {
+  .text-lg-left { text-align: left; }
+  .text-lg-right { text-align: right; }
+  .text-lg-center { text-align: center; }
+  .text-lg-justify { text-align: justify; }
+}
+
+/*responsive floating*/
+
+@media (min-width: @screen-sm-min) {
+    .pull-right-sm {
+      float: right;
+    }
+    .pull-left-sm{
+      float:left;
+    }
+}
+@media (min-width: @screen-md-min) {
+.pull-right-md {
+  float: right;
+}
+.pull-left-md {
+  float: left;
+}
+}
+@media (min-width: @screen-lg-min) {
+    .pull-right-lg {
+      float: right;
+    }
+    .pull-left-lg {
+      float: left;
+    }
+}
+
